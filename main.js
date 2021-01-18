@@ -72,5 +72,20 @@ $(document).ready(function(){
     $(".submit").click(function(){
     return false;
     })
+
+    $('.card-souscripteur').hide();
+
+    $(function() {
+        $('#choix_souscripteur').change(function(){
+            $('.card-souscripteur').hide();
+            console.log($(this).val())
+          if($(this).val()=="autre"){
+
+            $('.card-souscripteur').show();
+
+          }
+        
+        });
+      });
     
     });
