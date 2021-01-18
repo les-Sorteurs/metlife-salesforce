@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+ 
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#home">Inscription</a></li>
+    <li><a data-toggle="pill" href="#menu1">choix du souscripteur</a></li>
+    <li><a data-toggle="pill" href="#menu2">caracterisque de l'emprunt</a></li>
+    <li><a data-toggle="pill" href="#menu3">Commissionnement  </a></li>
+    
+    <li><a data-toggle="pill" href="#menu5">Recaputilatif  </a></li>
+    <li><a data-toggle="pill" href="#menu6">Question (Qes)  </a></li>
+  </ul>
+  
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h3>Incription des assurée <a class="btn btn-primary col-md-2">Ajouter</a>
+      </h3>
+      
+      <p>
+       
+   
+      </p>
+      
+      <div class="panel panel-primary">
+        <div class="panel-heading">Assuré 1</div>
+        <div class="panel-body">
+           
+            <form class="form-inline" action="" id="assure_1">
+               <div class="row">
+
+
+              
+               
+                <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <select class="form-control" id="genre">
+                      <option>Madame</option>
+                      <option>Mr</option>
+                     
+                    </select>
+                  </div>
+                
+                
+                <div class="form-group col-md-4">
+                  <label for="nom">Nom:</label>
+                  <input type="text" class="form-control" id="nom">
+                </div>
+
+
+                <div class="form-group cols-md-4 ">
+                    <label for="prenom">Prenom:</label>
+                    <input type="text" class="form-control" id="prenom">
+                  </div>
+
+                  
+
+
+                  <div class="form-group cols-md-4">
+                    <label for="situation_matrimoniale">Situation matrimoniale:</label>
+                    <select class="form-control" id="situation_matrimoniale">
+                        <option>Celibataire</option>
+                        <option>Marié</option>
+                     
+                    </select>
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="nom_jeune_fille">Nom de jeune fille:</label>
+                    <input type="text" class="form-control" id="nom_jeune_fille">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="date_naissance">Date de naissance:</label>
+                    <input type="date" class="form-control" id="date_naissance">
+                  </div>
+                  <div class="form-group cols-md-4">
+                    <label for="lieu">Lieu:</label>
+                    <input type="text" class="form-control" id="lieu">
+                  </div>
+                  <div class="form-group cols-md-4">
+                    <label for="profession">Profession:</label>
+                    <input type="text" class="form-control" id="profession">
+                  </div>
+                  <div class="form-group cols-md-4">
+                    <label for="nationalite">Nationalité:</label>
+                    <input type="text" class="form-control" id="nationalite">
+                  </div>
+                  <div class="form-group cols-md-4">
+                    <label for="secteur_activite">Secteur d'activité:</label>
+                    <input type="text" class="form-control" id="secteur_activite">
+                  </div>
+                
+                  <div class="form-group cols-md-4">
+                    <label for="pays">Pays:</label>
+                    <input type="text" class="form-control" id="pays">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_1">Adresse 1:</label>
+                    <input type="text" class="form-control" id="adresse_1">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_2">Adresse 2:</label>
+                    <input type="text" class="form-control" id="adresse_2">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_4">Adresse 4:</label>
+                    <input type="text" class="form-control" id="adresse_4">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="cp">Cp:</label>
+                    <input type="text" class="form-control" id="cp">
+                  </div>
+               
+                  <div class="form-group cols-md-4">
+                    <label for="ville">Ville:</label>
+                    <input type="text" class="form-control" id="ville">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" class="form-control" id="telephone">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="tel_mobile">Tel mobile:</label>
+                    <input type="text" class="form-control" id="tel_mobile">
+                  </div>
+
+                  <div class="form-group cols-md-4">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+           
+            </div>
+
+            
+             
+
+             <!-- troisieme ligne du formulaire des assurés -->
+             
+
+
+
+                <button type="submit" class="btn btn-default">Submit</button>
+            </div>
+              </form>
+             
+
+
+        </div>
+       
+      </div>
+  
+   
+    
+    <div id="menu1" class="tab-pane fade">
+      <h3>Choix du soucripteur</h3>
+      <p>   <div class="form-group">
+        <label for="choix_souscripteur">Choix du soucripteur:</label>
+        <select class="form-control" id="choix_souscripteur">
+          <option value="assure1">assuré 1</option>
+          <option value="assure2">assuré 2</option>
+          <option value="autre">autre</option>
+          <option value="tous_souscripteur">Chaque assuré est souscripteur</option>
+         
+        </select>
+      </div>
+    
+    
+    </p>
+
+     
+     
+      <div class="panel panel-warning card-souscripteur">
+        <div class="panel-heading">Assuré 1</div>
+        <div class="panel-body">
+
+
+            
+
+
+            <form class="form-inline" action="" id="assure_1">
+            
+               
+                <div class="form-group">
+                    <label for="genre">Genre:</label>
+                    <select class="form-control" id="genre">
+                      <option>Madame</option>
+                      <option>Mr</option>
+                     
+                    </select>
+                  </div>
+                
+                
+                <div class="form-group col-md-4">
+                  <label for="nom">Nom:</label>
+                  <input type="text" class="form-control" id="nom">
+                </div>
+        
+        
+                <div class="form-group cols-md-4 ">
+                    <label for="prenom">Prenom:</label>
+                    <input type="text" class="form-control" id="prenom">
+                  </div>
+        
+                  
+        
+        
+                  <div class="form-group cols-md-4">
+                    <label for="type_personne">Type:</label>
+                    <select class="form-control" id="type_personne">
+                        <option>Personne Morale </option>
+                        <option>Personne physique</option>
+                     
+                    </select>
+                  </div>
+        
+                  
+        
+                 
+                  
+                
+                  <div class="form-group cols-md-4">
+                    <label for="pays">Pays:</label>
+                    <input type="text" class="form-control" id="pays">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_1">Adresse 1:</label>
+                    <input type="text" class="form-control" id="adresse_1">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_2">Adresse 2:</label>
+                    <input type="text" class="form-control" id="adresse_2">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="adresse_4">Adresse 4:</label>
+                    <input type="text" class="form-control" id="adresse_4">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="cp">Cp:</label>
+                    <input type="text" class="form-control" id="cp">
+                  </div>
+               
+                  <div class="form-group cols-md-4">
+                    <label for="ville">Ville:</label>
+                    <input type="text" class="form-control" id="ville">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="telephone">Telephone:</label>
+                    <input type="text" class="form-control" id="telephone">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="tel_mobile">Tel mobile:</label>
+                    <input type="text" class="form-control" id="tel_mobile">
+                  </div>
+        
+                  <div class="form-group cols-md-4">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                  </div>
+           
+                </form>
+        </div>
+      </div>
+      
+    </div>
+
+
+     
+     
+
+
+
+    
+    <div id="menu2" class="tab-pane fade">
+      <h3>Caracteristiques</h3>
+      <p></p>
+   
+      <div class="col-sm-4">
+  
+        <h4>Caracteristiques</h4>
+        <div class="card card-price">
+         
+          <div class="card-body">
+           
+            <table class="table">
+              <tr><th>Libellé</th><th>Amount</th></tr>
+              <tr><td class="price">Pret</td><td class="note">240 000 (euro)</td></tr>
+              <tr><td class="price">Durée</td><td class="note">6(mois) </td></tr>
+              <tr><td class="price">Taux</td><td class="note">1.5 </td></tr>
+              <tr><td class="price">Differé</td><td class="note">amourtissage</td></tr>
+              <tr><td class="price">Type</td><td class="note">amourtissage</td></tr>
+              <tr><td class="price">Total </td><td class="note">240 000</td></tr>
+            </table>
+           
+          </div>
+        </div>
+              </div>
+    </div>
+    <div id="menu3" class="tab-pane fade">
+      <h3>Commissionnement</h3>
+      <p></p>
+      <div class="form-group">
+        <label for="commissionement">Commissionnement:</label>
+        <select class="form-control" id="commissionement">
+          <option value="escompte">Escompté</option>
+          <option value="lineaire">Lineaire</option>
+          
+         
+        </select>
+      </div>
+
+      <br>
+      <div class="form-group " id="mode_payement_assure_1">
+        <label for="mode_payement_1">Mode de payement 1 <sup> er</sup> assuré :</label>
+        <select class="form-control" id="mode_payement_1">
+          <option value="cheque">Cheque</option>
+          <option value="prelevement">Prelevement</option>
+          
+         
+        </select>
+      </div>
+    </div>
+
+
+
+    <div id="menu5" class="tab-pane fade">
+        <h3>Recapitulatif</h3>
+        <p></p>
+        <div class="form-group">
+          <label for="commissionement">Commissionnement:</label>
+          <select class="form-control" id="commissionement">
+            <option value="escompte">Escompté</option>
+            <option value="lineaire">Lineaire</option>
+            
+           
+          </select>
+        </div>
+  
+        <br>
+        <div class="form-group " id="mode_payement_assure_1">
+          <label for="mode_payement_1">Mode de payement 1 <sup> er</sup> assuré :</label>
+          <select class="form-control" id="mode_payement_1">
+            <option value="cheque">Cheque</option>
+            <option value="prelevement">Prelevement</option>
+            
+           
+          </select>
+        </div>
+      </div>
+  </div>
+</div>
+<script src="main.js"></script>
+</body>
+</html>

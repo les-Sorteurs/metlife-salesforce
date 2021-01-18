@@ -77,11 +77,11 @@ $(document).ready(function(){
 
     $(function() {
         $('#choix_souscripteur').change(function(){
-            $('.card-souscripteur').hide();
+            $('.card-souscripteur').hide(1000);
             console.log($(this).val())
           if($(this).val()=="autre"){
 
-            $('.card-souscripteur').show();
+            $('.card-souscripteur').show(1000);
 
           }
         

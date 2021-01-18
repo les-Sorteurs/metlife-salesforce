@@ -36,7 +36,7 @@
                             <li class="active" id="personal"><strong>Informations assurés</strong></li>
                             <li id="account"><strong>  choix du souscripteur</strong></li>
                             <li id="payment"><strong>Caracteristiques et souscription de l'emprunt</strong></li>
-                            
+                            <li id="payment2"><strong>souscription de l'emprunt</strong></li>
                             <li id="confirm"><strong>Previsualisation</strong></li>
                         </ul>
                         <div class="progress">
@@ -277,13 +277,14 @@
                                 </div> 
                                   <!-- premiere ligne du formulaire des assurés -->
                                   <div class="row"> 
-                                    <div class="col-md-3">
+                                    <div class="col-md-6">
 
 
                                         <label class="fieldlabels">Choix du souscripteur: </label> 
                                         <select name="choix_souscripteur" id="choix_souscripteur">
                                             <option > 1er  assuré </option>
-                                            <option>2e assuré</option>
+                                            <option > 2 e  assuré </option>
+                                            <option>Chaque assuré est souscripteur</option>
                                             <option value='autre'>Autre</option>
                                            
                                         </select>
@@ -291,14 +292,14 @@
                                     
                                     </div>
 
-                                    <div class="col-md-3">
+                                    <div class="col-md-6">
 
 
                                         <label class="fieldlabels">Commissionnement : </label> 
                                         <select name="coord_souscripteur" id="coord_commissionnement">
-                                            <option value=""> 1er  assuré </option>
-                                            <option>2e assuré</option>
-                                            <option value='autre'>Autre</option>
+                                            <option value="linaire"> Lineaire </option>
+                                            <option value="escompte">Escompté</option>
+                                           
                                            
                                         </select>
                                         
@@ -458,6 +459,208 @@
                                 type="button" name="previous" class="previous action-button-previous"
                                 value="Previous" />
                         </fieldset>
+
+
+
+
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Choix du souscripteur:</h2>
+                                    </div>
+                                    <div class="col-5">
+                                        <h2 class="steps">Step 2 - 4</h2>
+                                    </div>
+                                </div> 
+                                  <!-- premiere ligne du formulaire des assurés -->
+                                  <div class="row"> 
+                                    <div class="col-md-6">
+
+
+                                        <label class="fieldlabels">Choix du souscripteur: </label> 
+                                        <select name="choix_souscripteur" id="choix_souscripteur">
+                                            <option > 1er  assuré </option>
+                                            <option > 2 e  assuré </option>
+                                            <option>Chaque assuré est souscripteur</option>
+                                            <option value='autre'>Autre</option>
+                                           
+                                        </select>
+                                        
+                                    
+                                    </div>
+
+                                    <div class="col-md-6">
+
+
+                                        <label class="fieldlabels">Commissionnement : </label> 
+                                        <select name="coord_souscripteur" id="coord_commissionnement">
+                                            <option value="linaire"> Lineaire </option>
+                                            <option value="escompte">Escompté</option>
+                                           
+                                           
+                                        </select>
+                                        
+                                    
+                                    </div>
+                                  
+
+
+                                    <div class="card text-white bg-dark card-souscripteur" >
+                                        <div class="card-body">
+                                          <h5 class="card-title">Coordonnées du souscripteur numero 1</h5>
+                                          <p class="card-text">              <!-- premiere ligne du formulaire des assurés -->
+                                            <div class="row"> 
+                                                <div class="col-md-2">
+            
+            
+                                                    <label class="fieldlabels">Genre: *</label> 
+                                                    <select name="coord_genre">
+                                                        <option>Madame</option>
+                                                        <option>Mr</option>
+                                                       
+                                                    </select>
+                                                    
+                                                
+                                                </div>
+                                                <div class="col-md-4">
+            
+            
+                                                    <label class="fieldlabels">type: *</label> 
+                                                    <select name="coordo_type">
+                                                        <option>Personne Morale</option>
+                                                        <option>Personne physique</option>
+                                                       
+                                                    </select>
+                                                    
+                                                
+                                                </div>
+                                                
+                                                <div class="col-md-3">
+            
+                                                    <label class="fieldlabels">Nom: *</label> <input type="text" name="coordo_nom"
+                                                    placeholder="Entrez le nom de l' assuré" /> 
+                                                </div>
+            
+                                                <div class="col-md-3">
+            
+                                                    <label class="fieldlabels">Prenom: *</label> <input type="text" name="coordo_prenom"
+                                                    placeholder="Entrez le prenom de l'assuré" /> 
+                                                </div>
+                                           
+                                            </div>
+            
+                                            
+                                               <!-- deuxieme ligne du formulaire des assurés -->
+                                               <div class="row"> 
+                                               
+                                           
+                                            </div>
+            
+                                             <!-- troisieme ligne du formulaire des assurés -->
+                                           
+            
+            
+                <div class="row"> 
+                                                
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Pays: *</label> <input type="text" name="coord_pays"
+                        placeholder="Pays" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Adresse 1: *</label> <input type="text" name="coordo_adresse_1"
+                        placeholder="Adressse 1" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Adresse 2: *</label> <input type="text" name="coordo_adresse_2"
+                        placeholder="Adressse 2" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Adresse 3: *</label> <input type="text" name="coordo_adresse_3"
+                        placeholder="Adressse 3" /> 
+                    </div>
+            
+            
+            
+                    <div class="col-md-2">
+            
+                        <label class="fieldlabels">Cp: *</label> <input type="text" name="coordo_cp"
+                        placeholder="CP" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Ville: </label> <input type="text" name="coordo_ville"
+                        placeholder="ville" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Telephone: </label> <input type="text" name="coordo_telephone"
+                        placeholder="Telephone" /> 
+                    </div>
+            
+                    <div class="col-md-3">
+            
+                        <label class="fieldlabels">Tel mobile: </label> <input type="text" name="coordo_tel_mobile"
+                        placeholder="Telephone mobile" /> 
+                    </div>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+                   
+               
+                </div></p>
+                                          <a href="#" class="btn btn-primary">Ajouter un assuré</a>
+                                        </div>
+                                      </div>
+
+
+
+
+
+
+
+
+
+
+                               
+                                </div>
+
+
+                            </div> <input type="button" name="next" class="next action-button" value="Next" /> <input
+                                type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                        </fieldset>
+
+
+
                         <fieldset>
                             <div class="form-card">
                                 <div class="row">
